@@ -77,9 +77,7 @@ int main()
 	cin >> fileLocation;
 	
 	
-	ifstream myfile (fileLocation);
-	
-	ifstream myfile(myfile);
+	ifstream myfile(fileLocation);
 	if (myfile.is_open()) {
 		while (getline(myfile, line)) {
 			examineLine(line,grid);
